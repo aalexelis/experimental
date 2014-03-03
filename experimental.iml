@@ -61,7 +61,6 @@
     <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.10:2.0.M5b" level="project" />
     <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.7.2" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: commons-httpclient:commons-httpclient:3.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="SBT: commons-logging:commons-logging:1.0.4" level="project" />
     <orderEntry type="library" name="SBT: net.liftmodules:fobo-angularjs_3.0_2.10:1.2-SNAPSHOT" level="project" />
     <orderEntry type="library" name="SBT: net.liftmodules:fobo-datatables_3.0_2.10:1.2-SNAPSHOT" level="project" />
     <orderEntry type="library" name="SBT: net.liftmodules:fobo-font-awesome_3.0_2.10:1.2-SNAPSHOT" level="project" />
@@ -76,6 +75,12 @@
     <orderEntry type="library" name="SBT: net.liftmodules:fobo_3.0_2.10:1.2-SNAPSHOT" level="project" />
     <orderEntry type="library" name="SBT: net.liftmodules:lift-jquery-module_3.0_2.10:2.6-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: net.liftweb:lift-testkit_2.10:3.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="SBT: com.ning:async-http-client:1.7.11" level="project" />
+    <orderEntry type="library" name="SBT: io.netty:netty:3.6.3.Final" level="project" />
+    <orderEntry type="library" name="SBT: net.databinder.dispatch:dispatch-core_2.10:0.10.0" level="project" />
+    <orderEntry type="library" name="SBT: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.httpcomponents:httpclient:4.2-beta1" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.httpcomponents:httpcore:4.2-beta1" level="project" />
   </component>
 </module>
 
