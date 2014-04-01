@@ -8,6 +8,8 @@ import common._
 import http._
 import sitemap._
 import Loc._
+import code.lib.RestTestShopProAPI
+
 //import net.liftmodules.JQueryModule
 import net.liftweb.http.js.jquery._
 import net.liftmodules.FoBo
@@ -26,7 +28,7 @@ class Boot {
     val entries = List(
       Menu.i("Home") / "index", // the simple way to declare a menu
       Menu.i("ShopProAPI") / "shopproapi",
-      Menu.i("TestShopProAPI") / "testshopproapi",
+      //Menu.i("TestShopProAPI") / "testshopproapi",
 
       // more complex because this menu allows anything in the
       // /static path to be visible
@@ -36,6 +38,8 @@ class Boot {
     // set the sitemap.  Note if you don't want access control for
     // each page, just comment this line out.
     LiftRules.setSiteMap(SiteMap(entries:_*))
+
+    LiftRules.statelessDispatch.append(RestTestShopProAPI)
 
     //Show the spinny image when an Ajax call starts
     LiftRules.ajaxStart =
