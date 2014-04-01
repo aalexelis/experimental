@@ -25,6 +25,7 @@ class Boot {
     // Build SiteMap
     val entries = List(
       Menu.i("Home") / "index", // the simple way to declare a menu
+      Menu.i("NG Snippet") /"ngsnippet",
 
       // more complex because this menu allows anything in the
       // /static path to be visible
@@ -55,6 +56,7 @@ class Boot {
     //JQueryModule.InitParam.JQuery=JQueryModule.JQuery191
     //JQueryModule.init()
     FoBo.InitParam.JQuery = FoBo.JQuery1110
+    FoBo.InitParam.ToolKit = FoBo.AngularJS1211
     FoBo.init()
 
 
