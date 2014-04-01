@@ -7,6 +7,12 @@
         <option name="compilerLibraryName" value="SBT:: scala-compiler:2.10.2" />
       </configuration>
     </facet>
+    <facet type="scala" name="Scala">
+      <configuration>
+        <option name="compilerLibraryLevel" value="Project" />
+        <option name="compilerLibraryName" value="SBT:: scala-compiler:2.10.2" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/scala-2.10/classes" />
@@ -62,20 +68,20 @@
     <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.7.2" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: commons-httpclient:commons-httpclient:3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: commons-logging:commons-logging:1.0.4" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-angularjs_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-datatables_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-font-awesome_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-foundation_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-google-code-prettify_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-jquery-mobile_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-jquery_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-knockout_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-pace_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-twbs-bootstrap3_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo-twitter-bootstrap_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:fobo_3.0_2.10:1.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="SBT: net.liftmodules:lift-jquery-module_3.0_2.10:2.6-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: net.liftweb:lift-testkit_2.10:3.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-angularjs_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-datatables_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-font-awesome_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-foundation_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-google-code-prettify_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-jquery-mobile_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-jquery_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-knockout_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-pace_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-twbs-bootstrap3_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo-twitter-bootstrap_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:fobo_3.0_2.10:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.liftmodules:lift-jquery-module_3.0_2.10:2.6" level="project" />
   </component>
 </module>
 

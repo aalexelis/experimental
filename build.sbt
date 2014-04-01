@@ -15,7 +15,7 @@ resolvers ++= Seq(
   val liftVersion = "3.0-SNAPSHOT"
   libraryDependencies ++= Seq(
     "net.liftweb"             %% "lift-webkit"       % liftVersion             % "compile",
-    "net.liftmodules"         %% "fobo_3.0"          % "1.2-SNAPSHOT"          % "compile",
+    "net.liftmodules"         %% "fobo_3.0"          % "1.2"                   % "compile",
     "net.liftweb"             %% "lift-testkit"      % liftVersion             % "test",
     "org.eclipse.jetty"       %  "jetty-webapp"      % "8.1.7.v20120910"       %  "container,compile",
     "org.eclipse.jetty.orbit" %  "javax.servlet"     % "3.0.0.v201112011016"   %  "container,compile" artifacts Artifact("javax.servlet", "jar", "jar"),
@@ -25,4 +25,4 @@ resolvers ++= Seq(
   )
 }
 
-seq(webSettings :_*)
+com.earldouglas.xsbtwebplugin.WebPlugin.webSettings
