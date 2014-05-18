@@ -2,7 +2,7 @@ name := "experimental"
 
 version := "1.0"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 resolvers ++= Seq(
   "Java.net Maven2 Repository"     at "http://download.java.net/maven/2/",
@@ -21,7 +21,8 @@ resolvers ++= Seq(
     "org.eclipse.jetty.orbit" %  "javax.servlet"     % "3.0.0.v201112011016"   %  "container,compile" artifacts Artifact("javax.servlet", "jar", "jar"),
     "ch.qos.logback"          %  "logback-classic"   % "1.0.6",
     "org.scalatest"           %% "scalatest"         % "2.0.M5b"               % "test",
-    "com.h2database"          %  "h2"                % "1.2.138"
+    "com.h2database"          %  "h2"                % "1.2.138",
+    "net.databinder.dispatch" %% "dispatch-core" % "0.11.0"
   )
 }
 

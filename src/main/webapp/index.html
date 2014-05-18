@@ -9,6 +9,45 @@
 	  Welcome to your Lift app at <span id="time">Time goes here</span>
 	</span>
       </p>
+      <p>
+        <fieldset>
+            <legend>
+                <h3>送り先情報</h3>
+            </legend>
+
+            <div class="shipping_field"><label for="shippingAddressCountry">国</label><select
+                    id="shippingAddressCountry">
+                <option value="JP">日本</option>
+            </select>
+                <span class="lift:Msg?id=orders_shippingAddressCountry&errorClass=error"></span>
+            </div>
+            <div class="shipping_field"><label for="shippingAddressPostalCode">〒</label><input
+                    id="shippingAddressPostalCode">
+                <span data-lift="FetchPc.render"><button id="fetchpc">住所取得</button></span>
+                <span class="lift:Msg?id=orders_shippingAddressPostalCode&errorClass=error"></span>
+            </div>
+            <div class="shipping_field"><label for="shippingAddressState">都道府県</label><select
+                    id="shippingAddressState" onblur="">
+                <option value=""></option>
+                <option value="Hyogo">兵庫県</option>
+                <option value="Nara">奈良県</option>
+            </select>
+                <span class="lift:Msg?id=orders_shippingAddressState&errorClass=error"></span>
+            </div>
+            <div class="shipping_field"><label for="shippingAddressCity">市区町村</label><input
+                    id="shippingAddressCity" type="text">
+                <span class="lift:Msg?id=orders_shippingAddressCity&errorClass=error"></span>
+            </div>
+            <div class="shipping_field"><label for="shippingAddressOne">住所１</label><input
+                    id="shippingAddressOne" type="text">
+                <span class="lift:Msg?id=orders_shippingAddressOne&errorClass=error"></span>
+            </div>
+            <div class="shipping_field"><label for="shippingAddressTwo">住所２</label><input
+                    id="shippingAddressTwo" type="text">
+                <span class="lift:Msg?id=orders_shippingAddressTwo&errorClass=error"></span>
+            </div>
+        </fieldset>
+      </p>
     </div>
   </body>
 </html>
