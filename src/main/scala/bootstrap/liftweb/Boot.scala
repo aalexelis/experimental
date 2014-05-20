@@ -8,6 +8,8 @@ import common._
 import http._
 import sitemap._
 import Loc._
+import code.lib.RestCart
+
 //import net.liftmodules.JQueryModule
 import net.liftweb.http.js.jquery._
 import net.liftmodules.FoBo
@@ -34,6 +36,8 @@ class Boot {
     // set the sitemap.  Note if you don't want access control for
     // each page, just comment this line out.
     LiftRules.setSiteMap(SiteMap(entries:_*))
+
+    LiftRules.dispatch.append(RestCart)
 
     //Show the spinny image when an Ajax call starts
     LiftRules.ajaxStart =

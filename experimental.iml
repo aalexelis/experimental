@@ -4,13 +4,7 @@
     <facet type="scala" name="Scala">
       <configuration>
         <option name="compilerLibraryLevel" value="Project" />
-        <option name="compilerLibraryName" value="SBT:: scala-compiler:2.10.2" />
-      </configuration>
-    </facet>
-    <facet type="scala" name="Scala">
-      <configuration>
-        <option name="compilerLibraryLevel" value="Project" />
-        <option name="compilerLibraryName" value="SBT:: scala-compiler:2.10.2" />
+        <option name="compilerLibraryName" value="SBT:: scala-compiler-bundle:2.10.2" />
       </configuration>
     </facet>
   </component>
@@ -29,10 +23,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/target/scala-2.10/resource_managed/test" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.10.2" level="project" />
     <orderEntry type="library" name="SBT: ch.qos.logback:logback-classic:1.0.6" level="project" />
     <orderEntry type="library" name="SBT: ch.qos.logback:logback-core:1.0.6" level="project" />
     <orderEntry type="library" name="SBT: com.h2database:h2:1.2.138" level="project" />
@@ -61,10 +55,6 @@
     <orderEntry type="library" name="SBT: org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016" level="project" />
     <orderEntry type="library" name="SBT: org.joda:joda-convert:1.2" level="project" />
     <orderEntry type="library" name="SBT: org.mozilla:rhino:1.7R4" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-compiler:2.10.0" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.10.0" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scalap:2.10.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.10:2.0.M5b" level="project" />
     <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.7.2" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: commons-httpclient:commons-httpclient:3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: commons-logging:commons-logging:1.0.4" level="project" />
@@ -82,6 +72,11 @@
     <orderEntry type="library" name="SBT: net.liftmodules:fobo-twitter-bootstrap_3.0_2.10:1.2" level="project" />
     <orderEntry type="library" name="SBT: net.liftmodules:fobo_3.0_2.10:1.2" level="project" />
     <orderEntry type="library" name="SBT: net.liftmodules:lift-jquery-module_3.0_2.10:2.6" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-compiler:2.10.4" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.10.4" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.10.4" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scalap:2.10.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.10:2.1.5" level="project" />
   </component>
 </module>
 
