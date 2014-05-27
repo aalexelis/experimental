@@ -8,6 +8,8 @@ import common._
 import http._
 import sitemap._
 import Loc._
+import code.lib.SlickConfig
+
 //import net.liftmodules.JQueryModule
 import net.liftweb.http.js.jquery._
 import net.liftmodules.FoBo
@@ -56,6 +58,8 @@ class Boot {
     //JQueryModule.init()
     FoBo.InitParam.JQuery = FoBo.JQuery1110
     FoBo.init()
+
+    SlickConfig.init()
 
 
   }

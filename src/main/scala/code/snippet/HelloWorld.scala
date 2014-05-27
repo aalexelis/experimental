@@ -8,6 +8,10 @@ import java.util.Date
 import code.lib._
 import Helpers._
 
+import lib.SlickConfig._
+// Use H2Driver to connect to an H2 database
+import scala.slick.driver.H2Driver.simple._
+
 class HelloWorld {
   lazy val date: Box[Date] = DependencyFactory.inject[Date] // inject the date
 
@@ -19,5 +23,23 @@ class HelloWorld {
 
    def howdy = "#time *" #> date.toString
    */
+
+  class TestTbl(tag: Tag) extends Table[(Int, String)](tag, "Test"){
+    def id = column[Int]("ID", O.PrimaryKey)
+    def name = column[String]("NAME")
+
+    def * = (id, name)
+  }
+  val tests = TableQuery[TestTbl]
+
+  def getTests():(Int,String) = dbtransaction{ implicit session => {
+      tests.ddl.create
+
+      tests += (1, "first test")
+      tests.firstOption.get
+    }
+  }
+
+  def slick = "#slick *" #> getTests._2
 }
 
