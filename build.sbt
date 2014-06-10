@@ -15,13 +15,13 @@ resolvers ++= Seq(
   val liftVersion = "3.0-SNAPSHOT"
   libraryDependencies ++= Seq(
     "net.liftweb"             %% "lift-webkit"       % liftVersion             % "compile",
-    "net.liftmodules"         %% "fobo_3.0"          % "1.2"                   % "compile",
+    "net.liftmodules"         %% "fobo_3.0"          % "1.3-M1"                   % "compile",
     "net.liftweb"             %% "lift-testkit"      % liftVersion             % "test",
-    "org.eclipse.jetty"       %  "jetty-webapp"      % "8.1.7.v20120910"       %  "container,compile",
+    "org.eclipse.jetty"       %  "jetty-webapp"      % "9.2.0.RC0"       %  "container,compile",
     "org.eclipse.jetty.orbit" %  "javax.servlet"     % "3.0.0.v201112011016"   %  "container,compile" artifacts Artifact("javax.servlet", "jar", "jar"),
-    "ch.qos.logback"          %  "logback-classic"   % "1.0.6",
-    "org.scalatest"           %% "scalatest"         % "2.0.M5b"               % "test",
-    "com.h2database"          %  "h2"                % "1.2.138"
+    "ch.qos.logback"          %  "logback-classic"   % "1.1.2",
+    "org.scalatest"           %% "scalatest"         % "2.2.0-M1"               % "test",
+    "com.h2database"          %  "h2"                % "1.4.178"
   )
 }
 

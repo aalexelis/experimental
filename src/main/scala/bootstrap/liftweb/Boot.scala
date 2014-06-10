@@ -8,9 +8,10 @@ import common._
 import http._
 import sitemap._
 import Loc._
-//import net.liftmodules.JQueryModule
-import net.liftweb.http.js.jquery._
+import net.liftweb.http.js.jquery.JQueryArtifacts
 import net.liftmodules.FoBo
+import code.snippet.AngularApp
+import code.lib.NgCRUD
 
 
 /**
@@ -25,6 +26,8 @@ class Boot {
     // Build SiteMap
     val entries = List(
       Menu.i("Home") / "index", // the simple way to declare a menu
+      Menu(Loc("ngCRUD", Link(List("ngcrud"), true, "/ngcrud"),
+        "Ng CRUD")),
 
       // more complex because this menu allows anything in the
       // /static path to be visible
@@ -54,9 +57,15 @@ class Boot {
     LiftRules.jsArtifacts = JQueryArtifacts
     //JQueryModule.InitParam.JQuery=JQueryModule.JQuery191
     //JQueryModule.init()
-    FoBo.InitParam.JQuery = FoBo.JQuery1110
+    FoBo.InitParam.JQuery = FoBo.JQuery211
+    FoBo.InitParam.ToolKit = FoBo.AngularJS1211
     FoBo.init()
+
+    LiftRules.dispatch.append(AngularApp)
+    LiftRules.dispatch.append(NgCRUD)
 
 
   }
+
+
 }

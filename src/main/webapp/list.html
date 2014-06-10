@@ -1,0 +1,10 @@
+<table>
+    <tr ng-repeat="entity in entities">
+        <td><a ng-click="delete(entity.id)">x</a></td>
+        <td><a ng-bind="entity.id"></a></td>
+        <td ng-bind="entity.field"></td>
+    </tr>
+    <tr>
+        <td><a>Add new</a></td>
+    </tr>
+</table>

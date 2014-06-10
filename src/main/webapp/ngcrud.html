@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <title>Home</title></head>
+<body class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default;at=content">
+    <script data-lift="head" id="jquery" src="/classpath/fobo/jquery.js" type="text/javascript"></script>
+    <h2>Welcome to your project!</h2>
+
+    <div ng-app="crudApp">
+        <div ng-controller="crudSwitchCtrl">
+          <div ng-view></div>
+        </div>
+    </div>
+    <tail>
+        <script type="text/javascript" src="/classpath/fobo/angular.js"></script>
+        <script type="text/javascript" src="/classpath/fobo/angular-resource.js"></script>
+        <script type="text/javascript" src="/classpath/fobo/angular-route.js"></script>
+        <script>
+          angular.module('crudApp', ['ngResource', 'ngRoute'])
+            .factory('crudSrvc', ['$resource', function($resource) {
+              var Entity = $resource("/entities/:entityId", {entityId:'@id'},
+                {delete: {method:'DELETE', params:  {entityId:'@id'}, isArray:true}}
+              );
+              return Entity;
+            }])
+            .controller('crudSwitchCtrl', ['$scope', '$route', '$routeParams', '$location', function($scope, $route, $routeParams, $location) {
+              $scope.$route = $route;
+              $scope.$location = $location;
+              $scope.$routeParams = $routeParams;
+            }])
+            .controller('crudCtrl', ['$scope', '$resource', 'crudSrvc', function($scope, $resource, crudSrvc) {
+              $scope.entities = crudSrvc.query( function(){});
+              $scope.delete = function(id){
+                $scope.entities = crudSrvc.delete({entityId:id},function(){});
+              };
+              //$scope.entity = crudSrvc.get({entityId:1}, function(){});
+            }])
+            .config(function($routeProvider, $locationProvider) {
+              $routeProvider
+                .when('/entities', {
+                  templateUrl: 'list.html',
+                  controller: 'crudCtrl',
+                })
+                .when('/entities/:entityId', {
+                  templateUrl: 'single.html',
+                  controller: 'crudCtrl'
+                });
+          })
+          ;
+
+        </script>
+    </tail>
+</div>
+</body>
+</html>
